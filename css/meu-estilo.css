@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --font-primary-color: white;
+  --hover-color: #643a79;
+  --header-bg: #87509c;
+  --padding-geral: 15%;
+  --laranja: #eb7d4b;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-primary-color);
+}
+
+.header-style {
+  background-color: var(--header-bg);
+  height: 50px;
+  color: var(--font-primary-color);
+  padding: 0 var(--padding-geral);
+}
+
+header {
+  width: 100vw;
+}
+
+header img {
+  width: 80px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+header li + li {
+  margin-left: 20px;
+}
+
+header nav a {
+  transition: .5s;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: var(--font-primary-color);
+  background-color: var(--hover-color);
+}
+
+header li:hover {
+  transform: scale(1.1);
+}
+
+.casa {
+  background-color: var(--header-bg);
+  color: var(--font-primary-color);
+  height: 500px;
+  padding: 0 var(--padding-geral);
+}
+
+.casa h1 {
+  margin-bottom: 30px;
+  width: 90%;
+  text-align: center;
+}
+
+.btn-estilo {
+  width: 150px;  
+  padding: 10px 0;
+  font-size: 10px;
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
+  border-radius: 2px;
+  transition: .5s;
+}
+
+.btn-estilo:hover {
+  background-color: var(--font-primary-color);
+  color: var(--laranja);
+  border: 1px solid var(--laranja);
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) { 
+  .header-style {
+    flex-direction: column;
+  }
+  header img {
+    margin: 10px 0;
+  }
+}
