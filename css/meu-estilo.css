@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
 
+
 :root {  
   --padding-geral: 15%;
+  --padding-geral-resp: 10%;
   --font-primary-color: white;
   --hover-color: #643a79;
   --header-bg: #87509c;
   --laranja: #eb7d4b;
   --green: green;
+  --bg-services: #17C2A4;
 }
 
 body{
@@ -106,7 +109,34 @@ header nav a:hover {
   color: var(--font-primary-color);
 }
 
+.service-text-container p {
+  width: 600px;
+}
 
+.services {
+  padding: 0 var(--padding-geral);
+  background-color: var(--bg-services);
+}
+
+.card-bg {
+  background-color: var(--bg-services);
+  color: var(--font-primary-color);
+}
+
+#linha {
+  width: 87px;
+  border-color: black;
+  margin-left: calc(50% - 40px);
+}
+
+.services-img {
+  width: 95px;
+  height: 134px;
+}
+
+.services-img-lg {
+  width: 159px;
+}
 
 
 @media (max-width: 768px) { 
@@ -117,4 +147,19 @@ header nav a:hover {
   header img {
     margin: 10px 0;
   }
+  .service-text-container p {
+    width: 400px;
+  }
 }
+
+@media (max-width: 960px) {
+
+  .card-body h5 {
+    font-size: 18px;
+  }
+  .card-body p {
+    font-size: 14px;
+  }
+
+
+ }
