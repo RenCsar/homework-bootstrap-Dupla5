@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap");
 
-
-:root {  
+:root {
   --padding-geral: 15%;
   --padding-geral-resp: 10%;
   --font-primary-color: white;
@@ -9,15 +8,16 @@
   --header-bg: #87509c;
   --laranja: #eb7d4b;
   --green: green;
-  --bg-services: #17C2A4;
-  --blue: #E7F1F8;
-  --bg-icon:#BDD1DF;
+  --bg-services: #17c2a4;
+  --blue: #e7f1f8;
+  --bg-icon: #bdd1df;
+  --bg-portifolio: #ffdd99;
+  --bg-button: #17C2A4;
 
 }
 
-
-body{
-  font-family: 'Titillium Web', sans-serif;
+body {
+  font-family: "Titillium Web", sans-serif;
 }
 
 a {
@@ -48,7 +48,7 @@ header img {
 }
 
 header li {
-  transition: .5s;
+  transition: 0.5s;
 }
 
 header li:hover {
@@ -56,7 +56,7 @@ header li:hover {
 }
 
 header li:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 header li + li {
@@ -64,7 +64,7 @@ header li + li {
 }
 
 header nav a {
-  transition: .5s;
+  transition: 0.5s;
   padding: 3px 8px;
   border-radius: 3px;
   font-size: 14px;
@@ -85,18 +85,19 @@ header nav a:hover {
 .intro h1 {
   margin-bottom: 30px;
   width: 90%;
-  text-align: center;  
+  text-align: center;
 }
 
 .intro .btn-estilo {
-  width: 150px;  
+  height: 70px;
+  width: 293px;
   padding: 10px 0;
   font-size: 10px;
   background-color: var(--laranja);
   border: 1px solid var(--laranja);
   border-radius: 2px;
-  transition: .5s;
-  box-shadow: 0px 5px 32px 0px rgba(0,0,0,0.56);
+  transition: 0.5s;
+  box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.56);
 }
 
 .intro .btn-estilo:hover {
@@ -109,7 +110,7 @@ header nav a:hover {
 #btn-estilo-active:active {
   background-color: var(--green);
   border: 1px solid var(--green);
-  transform: scale(.9);
+  transform: scale(0.9);
   color: var(--font-primary-color);
 }
 
@@ -120,6 +121,9 @@ header nav a:hover {
 .services {
   padding: 0 var(--padding-geral);
   background-color: var(--bg-services);
+}
+.portifolio {
+  padding: 0 var(--padding-geral);
 }
 
 .card-bg {
@@ -147,12 +151,13 @@ header nav a:hover {
 }
 .bg-card-team {
   background-color: var(--blue);
-
+}
+.bg-card-portifolio {
+  background-color: var(--bg-portifolio);
 }
 
-.icon-color{
+.icon-color {
   background-color: var(--bg-icon);
-
 }
 .team-img {
   width: 200px;
@@ -163,27 +168,65 @@ header nav a:hover {
   background-color: white;
 }
 
+.bg-portifolio {
+  background-color: var(--bg-portifolio);
+}
+#btn-portifolio {
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: 0.5s;
+}
+#btn-portifolio + #btn-portifolio {
+  margin-left: 15px;
+}
 
-@media (max-width: 768px) { 
+#btn-portifolio:hover {
+  color: black;
+  background-color: var(--font-primary-color);
+  transform: scale(1.05);
+}
+
+#button-portifolio {
+  font-size: 18px;
+  height: 70px;
+  width: 293px;  
+  padding: 10px 0;
+  font-size: 10px;
+  background-color: var(--bg-button);
+  border: 1px solid var(--bg-button);
+  border-radius: 2px;
+  transition: .5s;
+}
+
+#button-portifolio:active{
+  background-color: var(--font-primary-color);
+  border: 1px solid var(--font-primary-color);
+  transform: scale(0.9);
+  color: var(--bg-button);
+}
+
+@media (max-width: 768px) {
   .header-style {
-    flex-direction: column;    
+    flex-direction: column;
     height: 70px;
   }
   header img {
     margin: 10px 0;
   }
-  .service-text-container p, .team-text-container p, .skills-text-container p{
+  .service-text-container p,
+  .team-text-container p,
+  .skills-text-container p,
+  .portifolio-text-container p {
     width: 400px;
   }
-
 }
 
 @media (max-width: 960px) {
-
   .card-body h5 {
     font-size: 18px;
   }
   .card-body p {
     font-size: 14px;
   }
- }
+}
