@@ -12,6 +12,7 @@
   --bg-services: #17C2A4;
   --blue: #E7F1F8;
   --bg-icon:#BDD1DF;
+
 }
 
 
@@ -144,7 +145,7 @@ header nav a:hover {
   padding: 0 var(--padding-geral);
   background-color: var(--blue);
 }
-.card-color{
+.bg-card-team {
   background-color: var(--blue);
 
 }
@@ -157,6 +158,10 @@ header nav a:hover {
   width: 200px;
   height: 200px;
 }
+.skills {
+  padding: 0 var(--padding-geral);
+  background-color: white;
+}
 
 
 @media (max-width: 768px) { 
@@ -167,7 +172,7 @@ header nav a:hover {
   header img {
     margin: 10px 0;
   }
-  .service-text-container p, .team-text-container p{
+  .service-text-container p, .team-text-container p, .skills-text-container p{
     width: 400px;
   }
 
