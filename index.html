@@ -1,157 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./assents/logo.svg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assents/logo.svg" />
     <title>Cuda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/meu-estilo.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/meu-estilo.css" />
+  </head>
 
-<body>
-    <header class="container-fluid header-style d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <a href="./index.html"><img src="./assents/logo.svg" alt="logo"></a>
-        </div>
-        <nav>
-            <ul class="d-flex flex-row justify-content-between">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+  <body>
+    <header
+      class="container-fluid header-style d-flex justify-content-between align-items-center"
+    >
+      <div class="logo">
+        <a href="./index.html"><img src="./assents/logo.svg" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul class="d-flex flex-row justify-content-between">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">WORK</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="intro container-fluid d-flex flex-column justify-content-center align-items-center">
-        <h1 class="fw-bold">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
-        <button type="button" class="btn-estilo btn btn-primary btn-sm fw-bold" id="btn-estilo-active">WORK WITH US!</button>
+    <section
+      class="intro container-fluid d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="fw-bold">
+        Hi there! We are the new kids on the block and we build awesome websites
+        and mobile apps.
+      </h1>
+      <button
+        type="button"
+        class="btn-estilo btn btn-primary btn-sm fw-bold"
+        id="btn-estilo-active"
+      >
+        WORK WITH US!
+      </button>
     </section>
-    <section class="services container-fluid d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
-        <div class="service-text-container text-center text-white">
-            <h1 class="fw-bold">SERVICES WE PROVIDE</h1>
-            <hr class="align-middle border border-2" id="linha">
-            <p>We are working with both individuals and businesses from all over the globe
-                to create awesome websites and applications.</p>
+    <section
+      class="services container-fluid d-flex flex-column justify-content-center align-items-center pt-5 pb-5"
+    >
+      <div class="service-text-container text-center text-white">
+        <h1 class="fw-bold">SERVICES WE PROVIDE</h1>
+        <hr class="align-middle border border-2" id="linha" />
+        <p>
+          We are working with both individuals and businesses from all over the
+          globe to create awesome websites and applications.
+        </p>
+      </div>
+      <div class="service-cards-container pt-5 pb-5">
+        <div class="row row-cols-1 row-cols-md-4 g-5 pb-5">
+          <div class="col">
+            <div class="card h-100 card-bg g-1 border border-0 text-center">
+              <img
+                src="./assents/icon-branding 1.png"
+                class="card-img-top services-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">BRANDING</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card-bg g-1 border border-0 text-center">
+              <img
+                src="./assents/icon-design 1.png"
+                class="card-img-top services-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">DESIGN</h5>
+                <p class="card-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card-bg g-1 border border-0 text-center">
+              <img
+                src="./assents/icon-development 1.png"
+                class="card-img-top services-img text-center rounded mx-auto d-block"
+                id="services-img"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">DEVELOPMENT</h5>
+                <p class="card-text">
+                  At vero eos et accusamus et iusto odio dignissimos qui
+                  blanditiis praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card-bg g-1 border border-0 text-center">
+              <img
+                src="./assents/icon-rocket 1.png"
+                class="card-img-top services-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ROCKET SCIENCE</h5>
+                <p class="card-text">
+                  Et harum quidem rerum est et expedita distinctio. Nam libero
+                  tempore.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="service-cards-container pt-5 pb-5">
-            <div class="row row-cols-1 row-cols-md-4 g-5 pb-5">
-                <div class="col">
-                  <div class="card h-100 card-bg g-1 border border-0 text-center">
-                    <img src="./assents/icon-branding 1.png" class="card-img-top services-img rounded mx-auto d-block"  alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">BRANDING</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit, 
-                        sed diam nonummy nibh.
-                        </p>
-                    </div>
-                  </div>
+      </div>
+    </section>
+    <section
+      class="team container-fluid d-flex flex-column justify-content-center align-items-center pt-5"
+    >
+      <div class="team-text-container text-center text-dark ">
+        <h1 class="fw-bold">MEET OUR BEAUTIFUL TEAM</h1>
+        <hr class="align-middle border border-2" id="linha" />
+        <p>
+          We are a small team of designers and developers, who help brands with
+          big ideas.
+        </p>
+      </div>
+      <div class="pt-5 pb-5">
+        <div class="row row-cols-1 row-cols-md-4 g-5 pb-5">
+          <div class="col">
+            <div class="card h-100 card-color g-1 border border-0 text-center">
+              <img
+                src="./assents/anne-hathway.png"
+                class="card-img-top team-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ANNE HATHWAY</h5>
+                <h6 class="text-info">CEO / Marketing Guru</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut.
+                </p>
+                <div class="pt-3">
+                   <img src="./assents/facebook-icon.svg" alt="">
+                <img src="./assents/twitter-icon.svg" alt="">
+                <img src="./assents/linkedin-icon.svg" alt="">
+                <img src="./assents/mail-icon.svg" alt="">
                 </div>
-                <div class="col">
-                  <div class="card h-100 card-bg g-1 border border-0 text-center">
-                    <img src="./assents/icon-design 1.png" class="card-img-top services-img rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">DESIGN</h5>
-                        <p class="card-text">Sed ut perspiciatis unde 
-                          omnis iste natus error sit 
-                          voluptatem
-                          </p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 card-color g-1 border border-0 text-center">
+              <img
+                src="./assents/kate-upton.png"
+                class="card-img-top team-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">KATE UPTON</h5>
+                <h6 class="text-info">Creative Director</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut.
+                </p>
+                <div class="pt-3">
+               <img src="./assents/twitter-icon.svg" alt="">
+               <img src="./assents/linkedin-icon.svg" alt="">
+               <img src="./assents/mail-icon.svg" alt="">
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card-color g-1 border border-0 text-center">
+              <img
+                src="./assents/olivia-wilde.png"
+                class="card-img-top team-img text-center rounded mx-auto d-block"
+                id="services-img"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">OLIVIA WILDE</h5>
+                <h6 class="text-info">Lead Designer</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut.
+                </p>
+                <div class="pt-3">
+                    <img src="./assents/facebook-icon.svg" alt="">
+                <img src="./assents/twitter-icon.svg" alt="">
+                <img src="./assents/linkedin-icon.svg" alt="">
+                <img src="./assents/mail-icon.svg" alt="">
                 </div>
-                <div class="col">
-                  <div class="card h-100 card-bg g-1 border border-0 text-center">
-                    <img src="./assents/icon-development 1.png" class="card-img-top services-img text-center rounded mx-auto d-block" id="services-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">DEVELOPMENT</h5>
-                        <p class="card-text">At vero eos et accusamus et 
-                          iusto odio dignissimos qui 
-                          blanditiis praesentium.
-                          </p>
-                    </div>
-                  </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card-color g-1 border border-0 text-center">
+              <img
+                src="./assents/ashley-greene.png"
+                class="card-img-top team-img rounded mx-auto d-block"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ASHLEY GREEN</h5>
+                <h6 class="text-info">SEO / Developer</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut.
+                </p>
+                <div class="pt-3">
+                  <img src="./assents/facebook-icon.svg" alt="">
+                <img src="./assents/twitter-icon.svg" alt="">
+                <img src="./assents/mail-icon.svg" alt="">
                 </div>
-                <div class="col">
-                  <div class="card h-100 card-bg g-1 border border-0 text-center">
-                    <img src="./assents/icon-rocket 1.png" class="card-img-top services-img rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">ROCKET SCIENCE</h5>
-                        <p class="card-text">Et harum quidem rerum est 
-                          et expedita distinctio. 
-                          Nam libero tempore.
-                          </p>
-                    </div>
-                  </div>
-                </div>
-            </div>           
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!--<div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="./assents/icon-branding 1.png" class="card-img-top services-img" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">BRANDING</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, 
-                    consectetuer adipiscing elit, 
-                    sed diam nonummy nibh.
-                    </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="./assents/icon-design 1.png" class="card-img-top services-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">DESIGN</h5>
-                  <p class="card-text">Sed ut perspiciatis unde 
-                    omnis iste natus error sit 
-                    voluptatem
-                    </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="./assents/icon-development 1.png" class="card-img-top services-img " alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">DEVELOPMENT</h5>
-                  <p class="card-text">At vero eos et accusamus et 
-                    iusto odio dignissimos qui 
-                    blanditiis praesentium.
-                    </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="./assents/icon-rocket 1.png" class="card-img-top services-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">ROCKET SCIENCE</h5>
-                  <p class="card-text">Et harum quidem rerum est 
-                    et expedita distinctio. 
-                    Nam libero tempore.
-                    </p>
-                </div>
-              </div>
-            </div>
-          </div>-->
-
-
-
-
-
-
-
+      </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

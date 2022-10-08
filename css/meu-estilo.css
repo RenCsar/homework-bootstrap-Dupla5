@@ -10,7 +10,10 @@
   --laranja: #eb7d4b;
   --green: green;
   --bg-services: #17C2A4;
+  --blue: #E7F1F8;
+  --bg-icon:#BDD1DF;
 }
+
 
 body{
   font-family: 'Titillium Web', sans-serif;
@@ -137,6 +140,23 @@ header nav a:hover {
 .services-img-lg {
   width: 159px;
 }
+.team {
+  padding: 0 var(--padding-geral);
+  background-color: var(--blue);
+}
+.card-color{
+  background-color: var(--blue);
+
+}
+
+.icon-color{
+  background-color: var(--bg-icon);
+
+}
+.team-img {
+  width: 200px;
+  height: 200px;
+}
 
 
 @media (max-width: 768px) { 
@@ -147,9 +167,10 @@ header nav a:hover {
   header img {
     margin: 10px 0;
   }
-  .service-text-container p {
+  .service-text-container p, .team-text-container p{
     width: 400px;
   }
+
 }
 
 @media (max-width: 960px) {
@@ -160,6 +181,4 @@ header nav a:hover {
   .card-body p {
     font-size: 14px;
   }
-
-
  }
