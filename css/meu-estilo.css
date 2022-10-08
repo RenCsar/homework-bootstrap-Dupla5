@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
 
-:root {
+:root {  
+  --padding-geral: 15%;
   --font-primary-color: white;
   --hover-color: #643a79;
   --header-bg: #87509c;
-  --padding-geral: 15%;
   --laranja: #eb7d4b;
   --green: green;
 }
@@ -18,25 +18,26 @@ a {
   color: var(--font-primary-color);
 }
 
-.header-style {
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+header {
+  width: 100vw;
   background-color: var(--header-bg);
   height: 50px;
   color: var(--font-primary-color);
   padding: 0 var(--padding-geral);
 }
 
-header {
-  width: 100vw;
+.header-style {
+  padding: 0 var(--padding-geral);
 }
 
 header img {
   width: 80px;
-}
-
-ul {
-  list-style-type: none;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 header li {
@@ -80,7 +81,7 @@ header nav a:hover {
   text-align: center;  
 }
 
-.btn-estilo {
+.casa .btn-estilo {
   width: 150px;  
   padding: 10px 0;
   font-size: 10px;
@@ -91,7 +92,7 @@ header nav a:hover {
   box-shadow: 0px 5px 32px 0px rgba(0,0,0,0.56);
 }
 
-.btn-estilo:hover {
+.casa .btn-estilo:hover {
   background-color: var(--font-primary-color);
   color: var(--laranja);
   border: 1px solid var(--laranja);
@@ -107,7 +108,8 @@ header nav a:hover {
 
 @media (max-width: 768px) { 
   .header-style {
-    flex-direction: column;
+    flex-direction: column;    
+    height: 70px;
   }
   header img {
     margin: 10px 0;
