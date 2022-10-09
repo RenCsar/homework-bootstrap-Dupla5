@@ -78,13 +78,13 @@ header nav a:hover {
 .intro {
   background-color: var(--header-bg);
   color: var(--font-primary-color);
-  height: 500px;
+  height: 600px;
   padding: 0 var(--padding-geral);
 }
 
 .intro h1 {
   margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
