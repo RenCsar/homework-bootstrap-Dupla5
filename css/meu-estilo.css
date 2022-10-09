@@ -2,7 +2,6 @@
 
 :root {
   --padding-geral: 15%;
-  --padding-geral-resp: 10%;
   --font-primary-color: white;
   --hover-color: #643a79;
   --header-bg: #87509c;
@@ -13,7 +12,7 @@
   --bg-icon: #bdd1df;
   --bg-portifolio: #ffdd99;
   --bg-button: #17C2A4;
-
+  --bg-depoimentos: #D74680;
 }
 
 body {
@@ -31,16 +30,15 @@ ul {
   padding-left: 0;
 }
 
+header, .header-style, .intro, .services, .portifolio, .team, .skills {
+  padding: 0 var(--padding-geral);
+}
+
 header {
   width: 100vw;
   background-color: var(--header-bg);
   height: 50px;
   color: var(--font-primary-color);
-  padding: 0 var(--padding-geral);
-}
-
-.header-style {
-  padding: 0 var(--padding-geral);
 }
 
 header img {
@@ -79,7 +77,6 @@ header nav a:hover {
   background-color: var(--header-bg);
   color: var(--font-primary-color);
   height: 600px;
-  padding: 0 var(--padding-geral);
 }
 
 .intro h1 {
@@ -119,11 +116,7 @@ header nav a:hover {
 }
 
 .services {
-  padding: 0 var(--padding-geral);
   background-color: var(--bg-services);
-}
-.portifolio {
-  padding: 0 var(--padding-geral);
 }
 
 .card-bg {
@@ -146,7 +139,6 @@ header nav a:hover {
   width: 159px;
 }
 .team {
-  padding: 0 var(--padding-geral);
   background-color: var(--blue);
 }
 .bg-card-team {
@@ -164,7 +156,6 @@ header nav a:hover {
   height: 200px;
 }
 .skills {
-  padding: 0 var(--padding-geral);
   background-color: white;
 }
 
@@ -206,6 +197,37 @@ header nav a:hover {
   color: var(--bg-button);
 }
 
+.depoimentos {
+  background-color: var(--bg-depoimentos);
+  color: var(--font-primary-color);
+  padding: 0 10%;
+}
+
+.bg-depoimentos-card {
+  background-color: var(--bg-depoimentos);
+}
+
+.depoimentos-title-margin-left {
+  margin-bottom: -5px;
+}
+
+.depoimentos-last-p {
+  color: var(--bg-portifolio);
+  font-size: 18px;
+}
+
+.depoimentos-card-margin{
+  margin-left: 25px;
+}
+
+.depoimentos-margin-top {
+  margin-top: 0px;
+}
+
+.container-mt{
+  margin-top: 100px;
+}
+
 @media (max-width: 768px) {
   .header-style {
     flex-direction: column;
@@ -220,6 +242,27 @@ header nav a:hover {
   .portifolio-text-container p {
     width: 400px;
   }
+
+  #btn-portifolio + #btn-portifolio {
+    margin-left: 0;
+  }
+
+  #btn-portifolio {
+    width: 65px;
+  }
+
+  .depoimentos-card-margin {
+    margin-left: 10px;
+  }
+
+  .depoimentos-margin-top {
+    margin-top: 20px;
+  }
+
+  .container-mt{
+    margin-top: 0px;
+  }
+
 }
 
 @media (max-width: 960px) {
