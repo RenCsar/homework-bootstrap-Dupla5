@@ -132,10 +132,14 @@ header nav a:hover {
   color: var(--font-primary-color);
 }
 
-#linha {
+.linha-service, .linha-team, .linha-skills, .linha-portifolio, .linha-depoimentos, .linha-contato {
   width: 87px;
-  border-color: black;
   margin-left: calc(50% - 40px);
+}
+
+.linha-service {
+  border-color: black;
+  border: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 .services-img {
@@ -152,6 +156,12 @@ header nav a:hover {
 .bg-card-team {
   background-color: var(--blue);
 }
+
+.linha-team {
+  border-color: #BDD1DF;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
 .bg-card-portifolio {
   background-color: var(--bg-portifolio);
 }
@@ -167,8 +177,18 @@ header nav a:hover {
   background-color: white;
 }
 
+.linha-skills {
+  border-color: #DFE8ED;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
 .bg-portifolio {
   background-color: var(--bg-portifolio);
+}
+
+.linha-portifolio {
+  border-color: #E5C37F;
+  border: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 #btn-portifolio {
@@ -209,6 +229,11 @@ header nav a:hover {
   padding: 0 10%;
 }
 
+.linha-depoimentos {
+  border-color: black;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
 .bg-depoimentos-card {
   background-color: var(--bg-depoimentos);
 }
@@ -236,6 +261,11 @@ header nav a:hover {
 
 .contato {
   background-color: var(--bg-contato);
+}
+
+.linha-contato {
+  border-color: #273A71;
+  border: 2px solid rgba(0, 0, 0, 0.9);
 }
 
 .input-contato, .textarea-contato {
@@ -289,19 +319,27 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
-  .header-style {
+  header {
+    height: 130px;    
     flex-direction: column;
-    height: 70px;
   }
+
   header img {
-    margin: 10px 0;
+    margin: 50px 0px 27px 0px;
   }
+
+  .intro h1 {
+    margin-bottom: 54px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   .service-text-container p,
   .team-text-container p,
   .skills-text-container p,
   .portifolio-text-container p {
     width: 400px;
-  }
+  }    
 
   #btn-portifolio + #btn-portifolio {
     margin-left: 0;
