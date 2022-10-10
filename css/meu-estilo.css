@@ -11,7 +11,7 @@
   --blue: #e7f1f8;
   --bg-icon: #bdd1df;
   --bg-portifolio: #ffdd99;
-  --bg-button: #17C2A4;
+  --bg-btn-portifolio: #17C2A4;
   --bg-depoimentos: #D74680;
   --bg-contato: #3C5499;
   --bg-input: #273A71;
@@ -89,16 +89,20 @@ header nav a:hover {
   text-align: center;
 }
 
-.intro .btn-estilo {
+.intro .btn-estilo, .btn-lg-portifolio, .btn-contato {
   height: 70px;
   width: 293px;
   padding: 10px 0;
-  font-size: 10px;
-  background-color: var(--laranja);
-  border: 1px solid var(--laranja);
+  font-size: 18px;
   border-radius: 2px;
   transition: 0.5s;
-  box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.56);
+  color: var(--font-primary-color);
+  box-shadow: 0px 15px 18px 10px rgba(0, 0, 0, 0.16);  
+}
+
+.intro .btn-estilo {
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
 }
 
 .intro .btn-estilo:hover {
@@ -108,7 +112,7 @@ header nav a:hover {
   transform: scale(1.05);
 }
 
-#btn-estilo-active:active {
+.intro .btn-estilo:active {
   background-color: var(--green);
   border: 1px solid var(--green);
   transform: scale(0.9);
@@ -166,6 +170,7 @@ header nav a:hover {
 .bg-portifolio {
   background-color: var(--bg-portifolio);
 }
+
 #btn-portifolio {
   width: 80px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -182,22 +187,20 @@ header nav a:hover {
   transform: scale(1.05);
 }
 
-#button-portifolio, #btn-contato {
-  font-size: 18px;
-  height: 70px;
-  width: 293px;  
-  padding: 10px 0;
-  background-color: var(--bg-button);
-  border: 1px solid var(--bg-button);
-  border-radius: 5px;
-  transition: .5s;
+.portifolio .btn-lg-portifolio {
+  background-color: var(--bg-btn-portifolio);
+  border: 1px solid var(--bg-btn-portifolio);
 }
 
-#button-portifolio:active{
+.portifolio .btn-lg-portifolio:hover {
+  transform: scale(1.05);
+}
+
+.portifolio .btn-lg-portifolio:active{
   background-color: var(--font-primary-color);
   border: 1px solid var(--font-primary-color);
   transform: scale(0.9);
-  color: var(--bg-button);
+  color: var(--bg-btn-portifolio);
 }
 
 .depoimentos {
@@ -252,12 +255,12 @@ header nav a:hover {
   color: var(--font-primary-color);
 }
 
-#btn-contato {
+.btn-contato {
   background-color: var(--bg-btn-contato);
-  transition: .6s;
+  border: 1px solid var(--bg-btn-portifolio);
 }
 
-#btn-contato:hover {
+.btn-contato:hover {
   transform: scale(1.05);
 }
 
@@ -324,7 +327,7 @@ footer a:hover {
     flex-wrap: wrap;
   }
 
-  #button-portifolio, #btn-contato {
+  .btn-lg-portifolio, .btn-contato, .intro .btn-estilo {
     font-size: 12px;
     height: 43.54px;
     width: 199.32px;
