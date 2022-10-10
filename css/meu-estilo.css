@@ -41,7 +41,7 @@ header, .header-style, .intro, .services, .portifolio, .team, .skills, .contato 
 header {
   width: 100vw;
   background-color: var(--header-bg);
-  height: 50px;
+  height: 80px;
   color: var(--font-primary-color);
 }
 
@@ -80,7 +80,7 @@ header nav a:hover {
 .intro {
   background-color: var(--header-bg);
   color: var(--font-primary-color);
-  height: 600px;
+  height: 640px;
 }
 
 .intro h1 {
@@ -175,6 +175,15 @@ header nav a:hover {
 }
 .skills {
   background-color: white;
+}
+
+.skills-p {
+  font-size: 18px;
+  width: 600px;
+}
+
+.skills-img-container {
+  margin-top: 20px;
 }
 
 .linha-skills {
@@ -333,7 +342,6 @@ footer a:hover {
     font-size: 24px;
     line-height: 36px;
   }
-
   
 
   .service-text-container p,
